@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]" parallel="tests">
+  <listeners>
+    <listener class-name="generic.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" name="RunInFFBrowser(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="scripts.TestValidLogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="launchApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- scripts.TestValidLogin -->
+    </classes>
+  </test> <!-- RunInFFBrowser(failed) -->
+  <test thread-count="5" name="RunInChromeBrowser(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="scripts.TestValidLogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="launchApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- scripts.TestValidLogin -->
+    </classes>
+  </test> <!-- RunInChromeBrowser(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

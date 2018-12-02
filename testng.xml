@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite" parallel="tests">
+<listeners>
+<listener class-name="generic.TestNGListeners"></listener>
+</listeners>
+  <test thread-count="5" name="RunInFFBrowser">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="scripts.TestValidLogin"/>
+      <class name="scripts.TestInvalidLogin"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="RunInChromeBrowser">
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="scripts.TestValidLogin"/>
+      <class name="scripts.TestInvalidLogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

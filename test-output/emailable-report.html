@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">RegressionSuite</th></tr>
+<tr><td><a href="#t0">RunInFFBrowser</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,100</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">RunInChromeBrowser</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">50,450</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">2</th><th class="num">93,550</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RunInFFBrowser &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts.TestValidLogin</td><td><a href="#m0">testValidLogin</a></td><td rowspan="1">1543731483930</td><td rowspan="1">16250</td></tr><tr><th colspan="4">RunInFFBrowser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts.TestInvalidLogin</td><td><a href="#m1">testInvalidLogin</a></td><td rowspan="1">1543731509375</td><td rowspan="1">4905</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">RunInChromeBrowser &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts.TestValidLogin</td><td><a href="#m2">testValidLogin</a></td><td rowspan="1">1543731482421</td><td rowspan="1">15423</td></tr><tr><th colspan="4">RunInChromeBrowser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts.TestInvalidLogin</td><td><a href="#m3">testInvalidLogin</a></td><td rowspan="1">1543731504112</td><td rowspan="1">4740</td></tr></tbody>
+</table>
+<h2>RunInFFBrowser</h2><h3 id="m0">scripts.TestValidLogin#testValidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">testValidLogin --> test method is started..<br/>testValidLogin --> test method is Failed..</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;actiTIME - Enter Time-Track123&quot;. Current title: &quot;actiTIME - Enter Time-Track&quot; (tried for 12 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;AJITH-PC&apos;, ip: &apos;192.168.0.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5080, moz:profile: C:\Users\Ajith\AppData\Loca..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0e89e4e5-35a7-4466-b061-c48e105a4276
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at scripts.TestValidLogin.testValidLogin(TestValidLogin.java:37)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">scripts.TestInvalidLogin#testInvalidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">testInvalidLogin --> test method is started..<br/>testInvalidLogin --> test method is Pass..</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>RunInChromeBrowser</h2><h3 id="m2">scripts.TestValidLogin#testValidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">testValidLogin --> test method is started..<br/>testValidLogin --> test method is Failed..</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;actiTIME - Enter Time-Track123&quot;. Current title: &quot;actiTIME - Enter Time-Track&quot; (tried for 12 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;AJITH-PC&apos;, ip: &apos;192.168.0.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Ajith\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49844}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: e20463a880f2e7c209238c2c76689e32
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at scripts.TestValidLogin.testValidLogin(TestValidLogin.java:37)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">scripts.TestInvalidLogin#testInvalidLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">testInvalidLogin --> test method is started..<br/>testInvalidLogin --> test method is Pass..</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

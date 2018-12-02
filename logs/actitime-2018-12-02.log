@@ -1,0 +1,6 @@
+11:42:03.929 [main] DEBUG scripts.TestValidLogin - Retrieving username from excel file
+11:42:04.489 [main] INFO  scripts.TestValidLogin - username retrieved successfully....
+11:48:03.539 [TestNG-tests-2] DEBUG scripts.TestValidLogin - Creating an object of LoginPage pom  class
+11:48:03.582 [TestNG-tests-2] INFO  scripts.TestValidLogin - Object of LoginPage pom  class is created successfully
+11:48:03.582 [TestNG-tests-2] DEBUG scripts.TestValidLogin - Retrieving username from excel file
+11:48:03.939 [TestNG-tests-1] DEBUG scripts.TestValidLogin - Creating an object of LoginPage pom  class

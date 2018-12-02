@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[RegressionSuite : is started here....]]>
+    </line>
+    <line>
+      <![CDATA[RunInFFBrowser ==> Test block started here..]]>
+    </line>
+    <line>
+      <![CDATA[RunInChromeBrowser ==> Test block started here..]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin --> test method is started..]]>
+    </line>
+    <line>
+      <![CDATA[RegressionSuite : is started here....]]>
+    </line>
+    <line>
+      <![CDATA[RunInFFBrowser ==> Test block started here..]]>
+    </line>
+    <line>
+      <![CDATA[RunInChromeBrowser ==> Test block started here..]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin --> test method is started..]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin --> test method is Failed..]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin --> test method is Failed..]]>
+    </line>
+    <line>
+      <![CDATA[testInvalidLogin --> test method is started..]]>
+    </line>
+    <line>
+      <![CDATA[testInvalidLogin --> test method is Pass..]]>
+    </line>
+    <line>
+      <![CDATA[testInvalidLogin --> test method is started..]]>
+    </line>
+    <line>
+      <![CDATA[testInvalidLogin --> test method is Pass..]]>
+    </line>
+  </reporter-output>
+  <suite name="RegressionSuite" duration-ms="50450" started-at="2018-12-02T06:17:51Z" finished-at="2018-12-02T06:18:41Z">
+    <groups>
+    </groups>
+    <test name="RunInFFBrowser" duration-ms="43100" started-at="2018-12-02T06:17:51Z" finished-at="2018-12-02T06:18:34Z">
+      <class name="scripts.TestValidLogin">
+        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:scripts.TestValidLogin@74ad1f1f]" name="launchApplication" is-config="true" duration-ms="12647" started-at="2018-12-02T06:17:51Z" finished-at="2018-12-02T06:18:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="testValidLogin()[pri:0, instance:scripts.TestValidLogin@74ad1f1f]" name="testValidLogin" duration-ms="16250" started-at="2018-12-02T06:18:03Z" finished-at="2018-12-02T06:18:20Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to be "actiTIME - Enter Time-Track123". Current title: "actiTIME - Enter Time-Track" (tried for 12 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'AJITH-PC', ip: '192.168.0.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5080, moz:profile: C:\Users\Ajith\AppData\Loca..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0e89e4e5-35a7-4466-b061-c48e105a4276]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "actiTIME - Enter Time-Track123". Current title: "actiTIME - Enter Time-Track" (tried for 12 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'AJITH-PC', ip: '192.168.0.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 57.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5080, moz:profile: C:\Users\Ajith\AppData\Loca..., moz:webdriverClick: false, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 0e89e4e5-35a7-4466-b061-c48e105a4276
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at scripts.TestValidLogin.testValidLogin(TestValidLogin.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin --> test method is started..]]>
+            </line>
+            <line>
+              <![CDATA[testValidLogin --> test method is Failed..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:scripts.TestValidLogin@74ad1f1f]" name="closeApplication" is-config="true" duration-ms="702" started-at="2018-12-02T06:18:20Z" finished-at="2018-12-02T06:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=TestValidLogin.testValidLogin()[pri:0, instance:scripts.TestValidLogin@74ad1f1f] output=testValidLogin --> test method is started..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- scripts.TestValidLogin -->
+      <class name="scripts.TestInvalidLogin">
+        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:scripts.TestInvalidLogin@6a1aab78]" name="launchApplication" is-config="true" duration-ms="8489" started-at="2018-12-02T06:18:20Z" finished-at="2018-12-02T06:18:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="testInvalidLogin()[pri:0, instance:scripts.TestInvalidLogin@6a1aab78]" name="testInvalidLogin" duration-ms="4905" started-at="2018-12-02T06:18:29Z" finished-at="2018-12-02T06:18:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testInvalidLogin --> test method is started..]]>
+            </line>
+            <line>
+              <![CDATA[testInvalidLogin --> test method is Pass..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:scripts.TestInvalidLogin@6a1aab78]" name="closeApplication" is-config="true" duration-ms="76" started-at="2018-12-02T06:18:34Z" finished-at="2018-12-02T06:18:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=TestInvalidLogin.testInvalidLogin()[pri:0, instance:scripts.TestInvalidLogin@6a1aab78] output=testInvalidLogin --> test method is started..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- scripts.TestInvalidLogin -->
+    </test> <!-- RunInFFBrowser -->
+    <test name="RunInChromeBrowser" duration-ms="50450" started-at="2018-12-02T06:17:51Z" finished-at="2018-12-02T06:18:41Z">
+      <class name="scripts.TestValidLogin">
+        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:scripts.TestValidLogin@22eeefeb]" name="launchApplication" is-config="true" duration-ms="11138" started-at="2018-12-02T06:17:51Z" finished-at="2018-12-02T06:18:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="testValidLogin()[pri:0, instance:scripts.TestValidLogin@22eeefeb]" name="testValidLogin" duration-ms="15423" started-at="2018-12-02T06:18:02Z" finished-at="2018-12-02T06:18:17Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to be "actiTIME - Enter Time-Track123". Current title: "actiTIME - Enter Time-Track" (tried for 12 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'AJITH-PC', ip: '192.168.0.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Ajith\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49844}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: e20463a880f2e7c209238c2c76689e32]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "actiTIME - Enter Time-Track123". Current title: "actiTIME - Enter Time-Track" (tried for 12 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'AJITH-PC', ip: '192.168.0.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Ajith\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49844}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: e20463a880f2e7c209238c2c76689e32
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at scripts.TestValidLogin.testValidLogin(TestValidLogin.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin --> test method is started..]]>
+            </line>
+            <line>
+              <![CDATA[testValidLogin --> test method is Failed..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:scripts.TestValidLogin@22eeefeb]" name="closeApplication" is-config="true" duration-ms="422" started-at="2018-12-02T06:18:17Z" finished-at="2018-12-02T06:18:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=TestValidLogin.testValidLogin()[pri:0, instance:scripts.TestValidLogin@22eeefeb] output=testValidLogin --> test method is started..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- scripts.TestValidLogin -->
+      <class name="scripts.TestInvalidLogin">
+        <test-method status="PASS" signature="launchApplication(java.lang.String)[pri:0, instance:scripts.TestInvalidLogin@17d0685f]" name="launchApplication" is-config="true" duration-ms="5835" started-at="2018-12-02T06:18:18Z" finished-at="2018-12-02T06:18:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="testInvalidLogin()[pri:0, instance:scripts.TestInvalidLogin@17d0685f]" name="testInvalidLogin" duration-ms="4740" started-at="2018-12-02T06:18:24Z" finished-at="2018-12-02T06:18:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testInvalidLogin --> test method is started..]]>
+            </line>
+            <line>
+              <![CDATA[testInvalidLogin --> test method is Pass..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:scripts.TestInvalidLogin@17d0685f]" name="closeApplication" is-config="true" duration-ms="12856" started-at="2018-12-02T06:18:28Z" finished-at="2018-12-02T06:18:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=TestInvalidLogin.testInvalidLogin()[pri:0, instance:scripts.TestInvalidLogin@17d0685f] output=testInvalidLogin --> test method is started..]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- scripts.TestInvalidLogin -->
+    </test> <!-- RunInChromeBrowser -->
+  </suite> <!-- RegressionSuite -->
+</testng-results>
